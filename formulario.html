@@ -1,0 +1,17 @@
+<template> 
+    <lightning-card title="Cliente">
+        <div class="slds-m-arround_medium">
+            
+            <lightning-input label="Primeiro nome" type="text" name="firstName" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Sobrenome" type="text" name="lastName" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="E-mail" type="email" name="email" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Website" type="website" name="website" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Empresa" type="text" name="empresa" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Receita Anual" type="number" name="receitaanual" onchange={handleInputChange}></lightning-input>
+           
+            <lightning-button variant="brand" label="Salvar" title="Primary action" onclick={onSpread}></lightning-button>
+            
+            
+        </div>
+    </lightning-card>    
+</template>
